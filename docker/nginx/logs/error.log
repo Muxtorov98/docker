@@ -1,0 +1,1 @@
+2023/09/10 07:36:59 [error] 30#30: *1 directory index of "/var/www/html/" is forbidden, client: 172.19.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8909"
