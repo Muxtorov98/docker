@@ -1,0 +1,26 @@
+vim .bashrc
+
+. .bashrc
+
+
+# docker
+alias d-stop-all="docker stop \`docker ps -q\`"
+alias d-rm-containers="docker rm \`docker ps -qa\`"
+alias d-rm-images="docker rmi \`docker images\`"
+alias d-rm-volumes="docker volume rm \`docker volume ls -q\`"
+alias d-rm-all="docker stop \`docker ps -qa\` && d-rm-containers && d-rm-volumes && d-rm-images"
+alias dc-stop="docker compose stop"
+alias dc-down="docker compose down"
+alias dc-up="docker compose up -d"
+alias dc-up-not-deamon="docker compose up"
+alias dc-up-with-local-env-not-deamon="docker compose --env-file=.env.local up"
+alias dc-up-with-local-env="dc-up-with-local-env-not-deamon -d"
+alias dc-php-exec="docker compose exec php"
+alias dc-php-bin-console="docker compose exec php bin/console"
+alias dc-php-composer-install-and-ask-install="docker compose exec php composer install && docker-compose exec php bin/console ask:install"
+alias dc-php-ask-install="docker compose exec php bin/console ask:install"
+alias dc-php="docker compose exec php bash"
+alias dc-redis="docker compose exec redis sh"
+alias dc-mysql="docker compose exec mysql bash"
+alias dc-nginx="docker compose exec nginx bash"
+alias dc-logs="docker compose logs"
