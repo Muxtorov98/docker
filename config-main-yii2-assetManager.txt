@@ -1,4 +1,4 @@
-# components 
+#frontend components 
 'assetManager' => [
             'baseUrl' => '/frontend/web/assets',
 ],
