@@ -1,0 +1,13 @@
+# phpStorm
+/.idea
+
+# docker
+/docker/mysql/db
+/docker/nginx/logs
+/docker/php/bash_history
+
+# env
+# /.env
+# /.env.local
+# /.env.local.php
+# /.env.*.local
